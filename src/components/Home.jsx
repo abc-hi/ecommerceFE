@@ -15,7 +15,7 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:4001/api/readallproducts');
+      const response = await axios.get('https://ecommercebe-h822.onrender.com/api/readallproducts');
       const data = Array.isArray(response.data) ? response.data : response.data.products;
 
       if (data) {

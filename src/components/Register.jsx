@@ -22,7 +22,7 @@ const Register = () => {
 
 const payloads = {name,email,password,confirmPassword}
 // http://localhost:4001/api/register
-       axios.post("http://localhost:4001/api/register",payloads)
+       axios.post("https://ecommercebe-h822.onrender.com/api/register",payloads)
        .then((res)=>setResponseMsg(res.data.message))
        .catch((err)=>
 
